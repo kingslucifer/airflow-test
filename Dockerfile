@@ -56,6 +56,8 @@ RUN set -ex \
     && pip install -U pip setuptools wheel \
     && pip install Cython \
     && pip install pytz \
+	&& pip install SQLAlchemy \
+	&& pip install pandas \
     && pip install pyOpenSSL \
     && pip install ndg-httpsclient \
     && pip install pyasn1 \
