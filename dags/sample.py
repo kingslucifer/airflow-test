@@ -31,7 +31,7 @@ class Top10WeeklyRecord(Base):
     PRICE_USD = Column(Float)
     INDEX_PORTION = Column(Float)
     
-engine = create_engine('postgresql://postgres:Password123@localhost:5432/thanos')
+engine = create_engine('postgresql://ccm:Password123@devdbinstance.cueh4niuygr6.us-west-2.rds.amazonaws.com:5432/thanos')
 metadata = MetaData()
 Session = sessionmaker(bind=engine)
 
